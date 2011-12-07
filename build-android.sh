@@ -109,7 +109,9 @@ case "$HOST_OS" in
         Platfrom=linux-x86
 esac
 
-CXXPATH=$AndroidNDKRoot/build/prebuilt/$Platfrom/arm-eabi-4.4.0/bin/arm-eabi-g++
+#CXXPATH=$AndroidNDKRoot/build/prebuilt/$Platfrom/arm-eabi-4.4.0/bin/arm-eabi-g++
+CXXPATH=$AndroidNDKRoot/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/bin/arm-linux-androideabi-g++
+
 CXXFLAGS=-I$AndroidNDKRoot/build/platforms/android-8/arch-arm/usr/include
 TOOLSET=gcc-androidR4
 if [ -n "$NDK_R5" ]; then
