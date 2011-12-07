@@ -32,3 +32,11 @@ Add the following to your Android.mk:
 Now use crystax ndk-build and have fun with it!
 Also note that you should build your projct and Boost with one version of NDK -
 STL inside NDK r4 and NDK r5 are not compatible in some subtle details.
+
+cuibono note:
+
+in boost_1_45_0/tools/build/v2/user-config.jam
+
+change arm-eabi-c++ to arm-linux-androideabi-c++ 
+
+
